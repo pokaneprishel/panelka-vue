@@ -1,26 +1,55 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <body class="wrap">
+    <div>
+      <h1 class="title">🌆PANELKA GAME</h1>
+      <h3 class="subtitle">Запомни все синие клетки и открой их</h3>
+    </div>
+    <MyBoard />
+  </body>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyBoard from "./components/MyBoard";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    MyBoard,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: "Press Start 2P", cursive;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-auto-rows: max-content;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgba(96, 165, 250, var(--tw-text-opacity));
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(96, 165, 250, var(--tw-text-opacity));
+  justify-items: center;
 }
 </style>
