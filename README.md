@@ -1,24 +1,10 @@
-# remember_me-vue
+# Panelka Game:video_game:
+Игра реализована на CLI версии ``Vue.js``:green_circle:
 
-## Project setup
-```
-npm install
-```
+:exclamation:``ALERT:`` В данной версии присутствует баг, который не позволяет полноценно играть. В дальнейшем проект будет дорабатываться.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+:railway_track:ROADMAP:
+1. Исправление багов
+2. Добработка mobile-версии
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Поиграть можно здесь[]
