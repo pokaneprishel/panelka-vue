@@ -6,3 +6,5 @@
 :railway_track:ROADMAP:
 1. Исправление багов
 2. Добработка mobile-версии
+
+Попробовать можно [здесь](https://panelka.netlify.app/):globe_with_meridians:	
