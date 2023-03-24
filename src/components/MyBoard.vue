@@ -30,10 +30,10 @@
 
 <script>
 import BoardItem from "./BoardItem";
-import useGameInit from "@/components/composables/useGameInit";
-import useGameStart from "@/components/composables/useGameStart";
-import useGameProcess from "@/components/composables/useGameProcess";
-import { GAME_STATUS } from "@/constants";
+import useGameInit from "./composables/useGameInit";
+import useGameStart from "./composables/useGameStart";
+import useGameProcess from "./composables/useGameProcess";
+import { GAME_STATUS } from "../constants";
 import { ref } from "vue";
 
 export default {
@@ -122,15 +122,30 @@ button:disabled p {
   grid-column-end: 4;
 }
 
-.diff-title {
-  
-}
-
 .win {
   color: rgba(96, 165, 250, var(--tw-border-opacity));
 }
 
 .fail {
   color: #b91c1c;
+}
+
+@media screen and (max-width: 750px) {
+  .board {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(12, minmax(0, 1fr));
+  }
+
+  .diff-el {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
 }
 </style>

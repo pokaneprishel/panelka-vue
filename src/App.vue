@@ -24,12 +24,17 @@ export default {
   font-family: "Press Start 2P", cursive;
 }
 
+body {
+  min-height: 100vh !important;
+  background-color: black;
+}
+
 .wrap {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   grid-auto-rows: max-content;
   background-color: black;
-  height: 100vh;
+  max-height: 100vh;
   width: 100%;
   align-items: flex-start;
   justify-items: center;
@@ -51,5 +56,16 @@ export default {
   --tw-text-opacity: 1;
   color: rgba(96, 165, 250, var(--tw-text-opacity));
   justify-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
 }
 </style>
